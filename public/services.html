@@ -1,22 +1,53 @@
-{{ define "content" }}
-<h1>Услуги</h1>
-<div class="services-list">
-    {{ range .Services }}
-        <div class="service-card">
-            <h3>{{ .Name }}</h3>
-            <p>{{ .Description }}</p>
-            <p>Цена: {{ .Price }}</p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="employees.html">Сотрудники</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="director.html">Директор</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <div class="services-list">
+                <div class="service-card">
+                    <h3>Ремонт ванной комнаты</h3>
+                    <p>Ремонт ванной комнаты под ключ. Быстро, качественно, недорого!</p>
+                    <p>Цена: от 50 000 руб.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Электромонтажные работы</h3>
+                    <p>Полный спектр электромонтажных работ любой сложности.</p>
+                    <p>Цена: от 30 000 руб.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Малярные работы</h3>
+                    <p>Шпатлевка, покраска, поклейка обоев - все виды малярных работ.</p>
+                    <p>Цена: от 40 000 руб.</p>
+                </div>
+            </div>
         </div>
-    {{ end }}
-</div>
-{{ if .PrevPage }}
-    <div class="pagination">
-        <a href="/services?page={{ .PrevPage }}">Предыдущая страница</a>
-    </div>
-{{ end }}
-{{ if .NextPage }}
-    <div class="pagination">
-        <a href="/services?page={{ .NextPage }}">Следующая страница</a>
-    </div>
-{{ end }}
-{{ end }}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SPB Ремонт</p>
+    </footer>
+
+</body>
+</html>
