@@ -1,65 +1,22 @@
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
-</head>
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/services">Услуги</a></li>
-                <li><a href="/portfolio">Портфолио</a></li>
-                <li><a href="/employees">Сотрудники</a></li>
-                <li><a href="/reviews">Отзывы</a></li>
-                <li><a href="/director">Директор</a></li>
-                <li><a href="/contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="container">
-            
+{{ define "content" }}
 <h1>Портфолио</h1>
-
+{{ range .Projects }}
     <div class="project-card">
-        <h2>Квартира на Ленина</h2>
-        <p>Ремонт двухкомнатной квартиры</p>
+        <h2>{{ .Name }}</h2>
+        <p>{{ .Description }}</p>
         <div class="project-images">
-            
-                <img src="/static/images/img1.jpg" alt="Project Image">
-            
-                <img src="/static/images/img2.jpg" alt="Project Image">
-            
+            {{ range .Images }}
+                <img src="{{ . }}" alt="Project Image">
+            {{ end }}
         </div>
         <div class="project-videos">
-            
+            {{ range .Videos }}
                 <video width="320" height="240" controls>
-                    <source src="/static/videos/video1.mp4" type="video/mp4">
+                    <source src="{{ . }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            
-                <video width="320" height="240" controls>
-                    <source src="/static/videos/video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            
+            {{ end }}
         </div>
     </div>
-
-
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 SPB Ремонт</p>
-    </footer>
-
-</body>
-</html>
+{{ end }}
+{{ end }}
