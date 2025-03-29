@@ -155,5 +155,11 @@ footer {
   /* ... другие стили для телефонов ... */
   .hero .hero-content p {
     color: black; /* Цвет текста для параграфа в hero-секции */
+      .card h3 {
+  text-align: center;
+}
+.card p {
+  text-align: center;
+}
   }
 }
