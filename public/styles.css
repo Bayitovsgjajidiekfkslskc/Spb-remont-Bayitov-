@@ -124,3 +124,11 @@ footer {
     width: 100%;
   }
 }
+<img src=""
+     srcset="image-medium.jpg 768w,
+             image-large.jpg 1200w"
+     alt="Описание изображения">
+
+.hero h1 {
+  color: black;
+}
