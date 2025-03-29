@@ -66,6 +66,14 @@ header nav ul {
     margin-bottom: 30px;
 }
 
+.hero h1 {
+    color: black; /* Заголовок будет черным */
+}
+
+.hero p {
+    color: black; /* Параграф будет черным */
+}
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
