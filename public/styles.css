@@ -59,19 +59,13 @@ header nav ul {
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: black; /* Цвет текста в hero-секции */
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
-}
-
-.hero h1 {
-    color: black; /* Заголовок будет черным */
-}
-
-.hero p {
-    color: black; /* Параграф будет черным */
+    color: black; /* Цвет текста в hero-секции */
 }
 
 .btn {
@@ -110,11 +104,26 @@ header nav ul {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-  /* ... другие стили для телефонов ... */
-  .card {
-    padding: 20px 15px; /* Увеличиваем отступы слева и справа */
-  }
+/* Портфолио */
+#portfolio {
+    padding: 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Подвал */
@@ -139,67 +148,6 @@ footer {
 
     .card {
         width: 100%;
+        padding: 20px 15px; /* Увеличиваем отступы слева и справа */
     }
-
-    header nav ul {
-        flex-direction: column; /* Элементы навигации располагаются в столбик */
-        text-align: center; /* Выравнивание текста по центру */
-    }
-
-    header nav ul li {
-        margin: 5px 0; /* Добавляем отступы между элементами */
-    }
-
-    header a {
-        font-size: 14px; /* Уменьшаем размер шрифта */
-    }
-
-    .hero .hero-content h1 {
-        color: black; /* Цвет текста в hero-секции */
-    }
-}
-
-@media (max-width: 768px) {
-  /* ... другие стили для телефонов ... */
-  .hero .hero-content p {
-    color: black; /* Цвет текста для параграфа в hero-секции */
-      .card h3 {
-  text-align: center;
-}
-.card p {
-  text-align: center;
-}
-
-      /* Общие стили */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Стили для портфолио */
-#portfolio {
-    padding: 20px;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
-    gap: 20px;
-}
-
-.project-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.project-card img {
-    max-width: 100%;
-    height: auto;
-}
-      
-  }
 }
