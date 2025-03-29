@@ -4,51 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Исправленный путь к стилям -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li> <!-- Исправленная ссылка -->
-                <li><a href="services.html">Услуги</a></li> <!-- Исправленная ссылка -->
-                <li><a href="portfolio.html">Портфолио</a></li> <!-- Исправленная ссылка -->
-                <li><a href="employees.html">Сотрудники</a></li> <!-- Исправленная ссылка -->
-                <li><a href="reviews.html">Отзывы</a></li> <!-- Исправленная ссылка -->
-                <li><a href="director.html">Директор</a></li> <!-- Исправленная ссылка -->
-                <li><a href="contacts.html">Контакты</a></li> <!-- Исправленная ссылка -->
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="employees.html">Сотрудники</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="director.html">Директор</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="container">
-            
             <h1>Контакты</h1>
-            <form action="/success" method="post">
+            <form action="/success" method="post" data-netlify="true">  <!-- Добавлен data-netlify="true" -->
                 <label for="name">Имя:</label>
                 <input type="text" id="name" name="name" required><br><br>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
+
                 <label for="message">Сообщение:</label>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
                 <input type="submit" value="Отправить">
             </form>
-
-        </div>
+        </div>  <!-- Закрывающий тег для container -->
     </main>
 
     <footer>
         <p>&copy; 2025 SPB Ремонт</p>
     </footer>
-
-    <div class="project-card">
-    <img src="" alt="Описание проекта">
-    <h3>Название проекта</h3>
-    <p>Краткое описание проекта.</p>
-    <a href="#">Подробнее</a>
-</div>
 
 </body>
 </html>
