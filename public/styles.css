@@ -126,6 +126,26 @@ header nav ul {
     height: auto;
 }
 
+.director-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.director-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.director-card h3 {
+    margin-bottom: 5px;
+}
+
 /* Подвал */
 footer {
     background: #333;
