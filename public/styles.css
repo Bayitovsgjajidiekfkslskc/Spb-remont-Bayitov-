@@ -172,6 +172,24 @@ header nav ul {
     margin-bottom: 5px;
 }
 
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.review-card h3 {
+    margin-bottom: 5px;
+}
+
 /* Подвал */
 footer {
     background: #333;
