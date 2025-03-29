@@ -190,6 +190,23 @@ header nav ul {
     margin-bottom: 5px;
 }
 
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 5px;
+}
+
 /* Подвал */
 footer {
     background: #333;
