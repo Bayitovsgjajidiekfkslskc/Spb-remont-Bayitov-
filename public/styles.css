@@ -102,6 +102,13 @@ header nav ul {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+  /* ... другие стили для телефонов ... */
+  .card {
+    padding: 20px 15px; /* Увеличиваем отступы слева и справа */
+  }
+}
+
 /* Подвал */
 footer {
     background: #333;
@@ -142,4 +149,11 @@ footer {
     .hero .hero-content h1 {
         color: black; /* Цвет текста в hero-секции */
     }
+}
+
+@media (max-width: 768px) {
+  /* ... другие стили для телефонов ... */
+  .hero .hero-content p {
+    color: black; /* Цвет текста для параграфа в hero-секции */
+  }
 }
