@@ -1,24 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Исправленный путь к стилям -->
 </head>
 <body>
 
     <header>
         <nav>
             <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/services">Услуги</a></li>
-                <li><a href="/portfolio">Портфолио</a></li>
-                <li><a href="/employees">Сотрудники</a></li>
-                <li><a href="/reviews">Отзывы</a></li>
-                <li><a href="/director">Директор</a></li>
-                <li><a href="/contacts">Контакты</a></li>
+                <li><a href="index.html">Главная</a></li> <!-- Исправленная ссылка -->
+                <li><a href="services.html">Услуги</a></li> <!-- Исправленная ссылка -->
+                <li><a href="portfolio.html">Портфолио</a></li> <!-- Исправленная ссылка -->
+                <li><a href="employees.html">Сотрудники</a></li> <!-- Исправленная ссылка -->
+                <li><a href="reviews.html">Отзывы</a></li> <!-- Исправленная ссылка -->
+                <li><a href="director.html">Директор</a></li> <!-- Исправленная ссылка -->
+                <li><a href="contacts.html">Контакты</a></li> <!-- Исправленная ссылка -->
             </ul>
         </nav>
     </header>
@@ -26,16 +25,16 @@
     <main>
         <div class="container">
             
-<h1>Контакты</h1>
-<form action="/success" method="post">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="message">Сообщение:</label>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    <input type="submit" value="Отправить">
-</form>
+            <h1>Контакты</h1>
+            <form action="/success" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Отправить">
+            </form>
 
         </div>
     </main>
