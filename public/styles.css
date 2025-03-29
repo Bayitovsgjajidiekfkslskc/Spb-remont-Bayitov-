@@ -113,22 +113,33 @@ footer {
 
 /* Стили для экранов меньше 768px (телефоны) */
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
-  .service-cards {
-    flex-direction: column; /* Карточки услуг располагаются в столбик */
-  }
-  .card {
-    width: 100%;
-  }
-}
-<img src=""
-     srcset="image-medium.jpg 768w,
-             image-large.jpg 1200w"
-     alt="Описание изображения">
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
 
-.hero h1 {
-  color: black;
+    .service-cards {
+        flex-direction: column; /* Карточки услуг располагаются в столбик */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Элементы навигации располагаются в столбик */
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Добавляем отступы между элементами */
+    }
+
+    header a {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .hero .hero-content h1 {
+        color: black; /* Цвет текста в hero-секции */
+    }
 }
